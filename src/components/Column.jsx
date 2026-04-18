@@ -42,11 +42,9 @@ const Column = ({ column }) => {
           <h2>{column.title}</h2>
           <span className="task-count">{filteredTasks.length}</span>
         </div>
-        {column.id === 'todo' && (
-          <button className="add-btn" onClick={() => setShowModal(true)}>
-            <Plus size={16} />
-          </button>
-        )}
+        <button className="add-btn" onClick={() => setShowModal(true)}>
+          <Plus size={16} />
+        </button>
       </div>
       
       <div className={`status-line ${column.id}`} />

@@ -44,7 +44,7 @@ const Header = ({ onMenuClick }) => {
           <div className="user-profile" onClick={() => setShowMenu(!showMenu)}>
             <div className="user-info">
               <span className="user-name">{user?.name || 'User'}</span>
-              <span className="user-location">U.P, India</span>
+              <span className="user-location">India</span>
             </div>
             <img 
               src="/assets/ad3f99f8bef8aecd2e54d68c4d642e43a47c99ab.png" 
