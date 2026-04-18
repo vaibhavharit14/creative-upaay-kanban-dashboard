@@ -46,7 +46,7 @@ const initialState = {
     },
     'progress': { 
       id: 'progress', 
-      title: 'On Progress', 
+      title: 'Progress', 
       tasks: [
         { 
           id: 'task-3', 
