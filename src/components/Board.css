@@ -1,0 +1,252 @@
+.board-container {
+  margin-top: var(--header-height);
+  margin-left: var(--sidebar-width);
+  padding: 40px;
+  height: calc(100vh - var(--header-height));
+  overflow-y: auto;
+}
+
+.board-header {
+  margin-bottom: 40px;
+}
+
+.board-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-left h1 {
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.title-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  padding: 6px;
+  border-radius: 6px;
+  background: var(--primary-light);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.invite-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-group img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+}
+
+.avatar-more {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #F4D7DA;
+  color: #D25B68;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: -8px;
+  border: 2px solid white;
+}
+
+.board-filters-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters-left, .filters-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 1px solid var(--text-grey);
+  border-radius: 6px;
+  color: var(--text-grey);
+  font-size: 14px;
+}
+
+.filter-select select {
+  border: none;
+  background: none;
+  color: var(--text-grey);
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 1px solid var(--text-grey);
+  border-radius: 6px;
+  color: var(--text-grey);
+  font-size: 14px;
+}
+
+.view-toggle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.divider {
+  width: 1px;
+  height: 25px;
+  background: var(--text-grey);
+  margin-right: 5px;
+}
+
+.toggle-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: var(--text-grey);
+}
+
+.toggle-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.columns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .columns-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .board-container {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-left h1 {
+    font-size: 28px;
+  }
+  .board-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .board-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .board-filters-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  .filters-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .filters-right {
+    justify-content: space-between;
+  }
+  .columns-grid {
+    grid-template-columns: 1fr;
+  }
+  .avatar-group img, .avatar-more {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.date-filter { position: relative; }
+.date-filter input { border: none; background: none; color: var(--text-grey); font-family: inherit; font-size: 14px; cursor: pointer; outline: none; }
+.clear-date { font-size: 18px; color: var(--priority-high); font-weight: bold; padding: 0 5px; cursor: pointer; }
+
+/* Reminder Banner */
+.reminder-banner {
+  background: #ff7675;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  animation: slideDown 0.4s ease-out;
+  box-shadow: 0 4px 15px rgba(210, 91, 104, 0.3);
+  position: relative;
+}
+
+.banner-close {
+  margin-left: auto;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

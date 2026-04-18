@@ -1,0 +1,75 @@
+.column {
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.todo { background: var(--todo-clr); }
+.status-dot.progress { background: var(--progress-clr); }
+.status-dot.done { background: var(--done-clr); }
+
+.header-left h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.task-count {
+  background: #E0E0E0;
+  color: #625F6D;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.add-btn {
+  width: 20px;
+  height: 20px;
+  background: #5030e51a;
+  color: #5030e5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-line {
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.status-line.todo { background: var(--todo-clr); }
+.status-line.progress { background: var(--progress-clr); }
+.status-line.done { background: var(--done-clr); }
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty-tasks { text-align: center; padding: 40px 20px; color: var(--text-grey); background: rgba(0,0,0,0.02); border-radius: 12px; border: 1px dashed var(--border); }
+.empty-tasks p { font-size: 14px; font-weight: 500; }

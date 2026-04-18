@@ -1,0 +1,64 @@
+:root {
+  --primary: #5030e5;
+  --primary-light: rgba(80, 48, 229, 0.08);
+  --bg-main: #ffffff; 
+  --bg-column: #f5f5f5;
+  --bg-white: #ffffff;
+  --text-main: #0d062d;
+  --text-grey: #787486;
+  --border: #dbdbdb;
+  
+  --todo-clr: #5030e5;
+  --progress-clr: #ffa500;
+  --done-clr: #76a5ff;
+  
+  --priority-low: #d58d49;
+  --priority-low-bg: #d58d491a;
+  --priority-high: #d8727d;
+  --priority-high-bg: #d8727d1a;
+  --priority-done: #68b266;
+  --priority-done-bg: #83c29d33;
+
+  --card-shadow: 0px 20px 25px -5px rgba(0,0,0,0.04), 0px 10px 10px -5px rgba(0,0,0,0.02);
+  --sidebar-width: 250px;
+  --header-height: 80px;
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.scrollable {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Hide global scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
