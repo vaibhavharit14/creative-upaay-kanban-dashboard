@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Derive name from email for a more dynamic feel
+
     const nameFromEmail = email.split('@')[0];
     const formattedName = nameFromEmail.charAt(0).toUpperCase() + nameFromEmail.slice(1);
     dispatch(login({ email, name: formattedName }));

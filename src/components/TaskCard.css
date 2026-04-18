@@ -113,7 +113,7 @@
 .late-task { border-left: 4px solid #D25B68; }
 .date-late { color: #D25B68 !important; font-weight: 700; display: flex; align-items: center; gap: 5px; }
 
-/* Dropdown Menu Styles */
+
 .card-header-right {
   position: relative;
 }

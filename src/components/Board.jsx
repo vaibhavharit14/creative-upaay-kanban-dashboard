@@ -36,7 +36,7 @@ const Board = () => {
   const dispatch = useDispatch();
   const [activeTask, setActiveTask] = useState(null);
 
-  // Level 2: Reminder Logic
+
   const overdueTasks = Object.values(columns)
     .flatMap(col => col.tasks)
     .filter(task => task.dueDate && new Date(task.dueDate) < new Date() && task.priority !== 'Completed');
@@ -69,7 +69,7 @@ const Board = () => {
       const destColId = over.data.current?.columnId || over.id;
 
       if (sourceColId === destColId) {
-        // Handle sorting within same column (simplified for now)
+
       } else {
         dispatch(moveTask({
           source: { droppableId: sourceColId },

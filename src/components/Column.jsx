@@ -20,13 +20,13 @@ const Column = ({ column }) => {
   const [showModal, setShowModal] = useState(false);
 
   const filteredTasks = column.tasks.filter(task => {
-    // Priority filter
+
     const matchesPriority = filter === 'all' || task.priority?.toLowerCase() === filter.toLowerCase();
     
-    // Date filter
+
     const matchesDate = !selectedDate || (task.dueDate && task.dueDate === selectedDate);
 
-    // Search filter
+
     const matchesSearch = !searchQuery || 
       task.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       task.description.toLowerCase().includes(searchQuery.toLowerCase());

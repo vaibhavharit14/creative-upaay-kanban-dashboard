@@ -96,7 +96,7 @@ const TaskCard = ({ task, columnId }) => {
           </div>
         )}
 
-        {/* Images disabled for consistent text-based look */}
+
 
         <div className="card-footer">
           <div className="avatar-group-small">
