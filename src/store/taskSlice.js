@@ -23,6 +23,24 @@ const initialState = {
           commentsCount: 10,
           filesCount: 3,
           activityLog: [],
+        },
+        { 
+          id: 'task-5', 
+          title: 'Wireframes', 
+          description: 'Low fidelity wireframes include the most basic content and visuals.', 
+          priority: 'High',
+          commentsCount: 2,
+          filesCount: 5,
+          activityLog: [],
+        },
+        { 
+          id: 'task-6', 
+          title: 'User Flows', 
+          description: 'Define the path users take through the application.', 
+          priority: 'Low',
+          commentsCount: 5,
+          filesCount: 1,
+          activityLog: [],
         }
       ] 
     },
@@ -32,11 +50,29 @@ const initialState = {
       tasks: [
         { 
           id: 'task-3', 
-          title: 'Onboarding Illustrations', 
-          description: 'Create detailed onboarding illustrations for the new user journey flow.', 
+          title: 'Brainstorming', 
+          description: 'Brainstorming brings team members\' diverse backgrounds into play. ', 
           priority: 'Low',
-          commentsCount: 14,
-          filesCount: 15,
+          commentsCount: 12,
+          filesCount: 0,
+          activityLog: [],
+        },
+        { 
+          id: 'task-7', 
+          title: 'Brainstorming', 
+          description: 'Brainstorming brings team members\' diverse backgrounds into play. ', 
+          priority: 'Low',
+          commentsCount: 12,
+          filesCount: 0,
+          activityLog: [],
+        },
+        { 
+          id: 'task-8', 
+          title: 'Brainstorming', 
+          description: 'Brainstorming brings team members\' diverse backgrounds into play. ', 
+          priority: 'Low',
+          commentsCount: 12,
+          filesCount: 0,
           activityLog: [],
         }
       ] 
@@ -47,8 +83,17 @@ const initialState = {
       tasks: [
         { 
           id: 'task-4', 
-          title: 'Mobile App Design', 
-          description: 'Finalize the mobile application design system and high-fidelity wireframes.', 
+          title: 'Brainstorming', 
+          description: 'Brainstorming brings team members\' diverse backgrounds into play. ', 
+          priority: 'Low',
+          commentsCount: 12,
+          filesCount: 0,
+          activityLog: [],
+        },
+        { 
+          id: 'task-9', 
+          title: 'Design System', 
+          description: 'It just needs to adapt the UI from what you did before', 
           priority: 'Completed',
           commentsCount: 12,
           filesCount: 15,

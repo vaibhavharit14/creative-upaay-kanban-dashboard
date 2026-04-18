@@ -112,11 +112,11 @@ const TaskCard = ({ task, columnId }) => {
           <div className="task-stats">
             <div className="stat-item">
               <MessageSquare size={14} />
-              <span>{task.commentsCount || 0}</span>
+              <span>{task.commentsCount || 0} comments</span>
             </div>
             <div className="stat-item">
               <Files size={14} />
-              <span>{task.filesCount || 0}</span>
+              <span>{task.filesCount || 0} files</span>
             </div>
           </div>
         </div>
