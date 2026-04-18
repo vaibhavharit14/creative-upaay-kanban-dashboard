@@ -33,11 +33,10 @@ const initialState = {
         { 
           id: 'task-3', 
           title: 'Onboarding Illustrations', 
-          description: '', 
+          description: 'Create detailed onboarding illustrations for the new user journey flow.', 
           priority: 'Low',
           commentsCount: 14,
           filesCount: 15,
-          image: '/assets/hero.png',
           activityLog: [],
         }
       ] 
@@ -49,11 +48,10 @@ const initialState = {
         { 
           id: 'task-4', 
           title: 'Mobile App Design', 
-          description: '', 
+          description: 'Finalize the mobile application design system and high-fidelity wireframes.', 
           priority: 'Completed',
           commentsCount: 12,
           filesCount: 15,
-          image: '/assets/ad3f99f8bef8aecd2e54d68c4d642e43a47c99ab.png', // Fallback to large image
           activityLog: [],
         }
       ] 
